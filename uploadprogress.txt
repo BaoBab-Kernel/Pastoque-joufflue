@@ -1,0 +1,11 @@
+Bonjour à tous
+Je sais que ce post date, mais ceci pourrait être utile aux nouveaux, (ou aux anciens qui ont oublié la galère ;)
+Pour ceux équipés de wamp/php 5.3.xx :
+Sur ce lien http://www.box.net/shared/vcczgpc8z3,
+vous pouvez télécharger le fichier php_uploadprogress-1.0.1-5.3-Win32-VC6-x86.zip (4.3KB).
+Vous le dézippez dans votre C:\wamp\bin\php\php5.3.5\ext
+Ensuite, vous ouvrez votre php.ini et rajoutez cette ligne dans la section ‘Dynamic extensions’ :
+extension=php_uploadprogress.dll (sans ; devant)
+Relancez le serveur.
+Chez moi ça fonctionne nickel.
+Bonne chance à tous
