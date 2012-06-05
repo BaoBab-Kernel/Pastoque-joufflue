@@ -1,0 +1,5 @@
+name = Articles2
+description = modification du nombre de lignes
+core = 7.x
+package = Features
+features[features_api][] = api:1
