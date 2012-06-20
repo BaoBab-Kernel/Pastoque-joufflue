@@ -78,10 +78,17 @@
  *
  * @see https://git.wiki.kernel.org/articles/a/l/i/Aliases.html#Advanced.
  */
+<<<<<<< .merge_file_a16168
 # $options['shell-aliases']['pull'] = '!git pull'; // We've all done it.
 # $options['shell-aliases']['pulldb'] = '!git pull && drush updatedb';
 # $options['shell-aliases']['noncore'] = 'pm-list --no-core';
 $options['shell-aliases']['glo'] = '!git log --oneline';
+=======
+#$options['shell-aliases']['pull'] = '!git pull'; // We've all done it.
+$options['shell-aliases']['glo'] = '!git log --oneline;
+# $options['shell-aliases']['pulldb'] = '!git pull && drush updatedb';
+# $options['shell-aliases']['noncore'] = 'pm-list --no-core';
+>>>>>>> .merge_file_a16296
 # $options['shell-aliases']['wipe'] = 'cache-clear all';
 # $options['shell-aliases']['unsuck'] = 'pm-disable -y overlay,dashboard';
 # $options['shell-aliases']['offline'] = 'variable-set -y --always-set maintenance_mode 1';
@@ -118,6 +125,18 @@ $options['shell-aliases']['glo'] = '!git log --oneline';
 # $options['config'][] = '.';
 
 /**
+<<<<<<< .merge_file_a16168
+=======
+ * Drush knows how to check for and download its own code updates with the
+ * `drush pm-updatecode` and `drush version` commands.  Set this value to TRUE
+ * (default) allows updates to latest stable release.  Set to FALSE to disable
+ * self update checks completely.  Set to 'head' to allow bleeding-edge updates
+ * from the code repository.
+ */
+# $options['self-update'] = FALSE;
+
+/**
+>>>>>>> .merge_file_a16296
  * Enable logging and periodic upload of anonymized usage statistics. The Drush
  * maintainers use this data to learn which commands and options are most
  * See the usage-show and usage-send commands.
